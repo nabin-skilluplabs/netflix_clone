@@ -1,0 +1,12 @@
+div {
+  background-color: aqua;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/AU-en-20250203-TRIFECTA-perspective_4c2c0651-1fe4-4069-8eae-83eb24e86279_large.jpg);
+  background-size: cover;
+
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 50px;
+  background-blend-mode: exclusion;
+}

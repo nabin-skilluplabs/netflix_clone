@@ -1,115 +1,145 @@
 @import url('reset.css');
 
 @font-face {
-    font-family: "Netflix Sans" ;
-    src: url('./fonts/NetflixSans_W_Rg.woff2');
-    font-weight: normal;
+  font-family: 'Netflix Sans';
+  src: url('./fonts/NetflixSans_W_Rg.woff2');
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Netflix Sans" ;
-    src: url('./fonts/NetflixSans_W_Md.woff2');
-    font-weight: 600;
+  font-family: 'Netflix Sans';
+  src: url('./fonts/NetflixSans_W_Md.woff2');
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "Netflix Sans" ;
-    src: url('./fonts/NetflixSans_W_Bd.woff2');
-    font-weight: bold;
+  font-family: 'Netflix Sans';
+  src: url('./fonts/NetflixSans_W_Bd.woff2');
+  font-weight: bold;
 }
 
 :root {
-  --primary-font: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, "sans-serif";
+  --primary-font: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu,
+    'sans-serif';
   --body-bg: #000000;
   --primary-font-color: #ffffff;
   --primary-color: rgb(229, 9, 20);
   --common-font-size: 16px;
+  font-size: 10px;
 }
 
 body {
-    background-color: var(--body-bg);
-    color: var(--primary-font-color);
-    font-family: var(--primary-font);
-    font-size: var(--common-font-size);
+  background-color: var(--body-bg);
+  color: var(--primary-font-color);
+  font-family: var(--primary-font);
+  font-size: var(--common-font-size);
 }
 
 .section-outer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .section-inner {
-    max-width: 1197px;
-    width: 100%;
+  max-width: 1197px;
+  width: 100%;
 }
 .btn {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 4px 16px;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .small-btn {
-    height: 24px;
+  height: 24px;
 }
 
 .primary-btn {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 /* START HERO SECTION */
 .hero-outer-wrapper {
-    height: 100vh;
-    background-image:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%,
-    rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%),
-    linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 84.67%, rgba(0, 0, 0, 0.6035) 92.33%, rgba(0, 0, 0, 0.6000) 100.0%),
-     url('./images/hero_banner_bg.jpg');
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.7889) 8.333%,
+      rgba(0, 0, 0, 0.7556) 16.67%,
+      rgba(0, 0, 0, 0.7) 25%,
+      rgba(0, 0, 0, 0.6222) 33.33%,
+      rgba(0, 0, 0, 0.5222) 41.67%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.2778) 58.33%,
+      rgba(0, 0, 0, 0.1778) 66.67%,
+      rgba(0, 0, 0, 0.1) 75%,
+      rgba(0, 0, 0, 0.04444) 83.33%,
+      rgba(0, 0, 0, 0.01111) 91.67%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.85) 8%,
+      rgba(0, 0, 0, 0.8465) 15.67%,
+      rgba(0, 0, 0, 0.8361) 23.33%,
+      rgba(0, 0, 0, 0.8187) 31%,
+      rgba(0, 0, 0, 0.7944) 38.67%,
+      rgba(0, 0, 0, 0.7632) 46.33%,
+      rgba(0, 0, 0, 0.725) 54%,
+      rgba(0, 0, 0, 0.6868) 61.67%,
+      rgba(0, 0, 0, 0.6556) 69.33%,
+      rgba(0, 0, 0, 0.6312) 77%,
+      rgba(0, 0, 0, 0.6139) 84.67%,
+      rgba(0, 0, 0, 0.6035) 92.33%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('./images/hero_banner_bg.jpg');
 }
 .header-logo {
-    fill: var(--primary-color);
-    width: 148px;
-    height: 40px;
+  fill: var(--primary-color);
+  width: 148px;
+  height: 40px;
 }
 .hero-outer-wrapper header {
-    display: flex;
-    justify-content: space-between;
-    height: 88px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
 }
 
 .hero-intro-outer {
-    height: calc(100vh - 88px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 88px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-intro-inner {
-    max-width: 664px;
-    width: 100%;
-    text-align: center;
+  max-width: 664px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero-intro-inner h2 {
-    font-size: 64px;
-    line-height: 80px;
-    font-weight: bold;
-    margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
 .hero-intro-inner h3 {
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 32px;
 }
 .hero-intro-inner p {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 /* END HERO SECTION */
