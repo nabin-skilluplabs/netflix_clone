@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .outer-section {
+        max-width: 1200px;
+        width: 98%;
+        margin: 0 1%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        display: none;
+      }
+      .item {
+        width: calc((100% - 30px) / 4);
+        background-color: #dddddd;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .item {
+          width: calc((100% - 20px) / 3);
+          font-size: 40px;
+          background-color: aqua;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .item {
+          width: calc((100% - 10px) / 2);
+          font-size: 30px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .item {
+          width: calc(100%);
+          font-size: 25px;
+        }
+      }
+
+      .mobile-outer-section {
+        width: 98%;
+        margin: 0 1%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .mobile-item {
+        width: 100%;
+        font-size: 25px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: aqua;
+      }
+
+      @media screen and (min-width: 400px) {
+        .mobile-item {
+          width: calc((100% - 10px) / 2);
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        .mobile-item {
+          width: calc((100% - 20px) / 3);
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .mobile-item {
+          width: calc((100% - 30px) / 4);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-section">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+    </div>
+
+    <div class="mobile-outer-section">
+      <div class="mobile-item">1</div>
+      <div class="mobile-item">2</div>
+      <div class="mobile-item">3</div>
+      <div class="mobile-item">4</div>
+      <div class="mobile-item">5</div>
+      <div class="mobile-item">6</div>
+      <div class="mobile-item">7</div>
+      <div class="mobile-item">8</div>
+    </div>
+  </body>
+</html>

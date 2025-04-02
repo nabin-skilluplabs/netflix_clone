@@ -4,10 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      :root {
+        font-size: 10px;
+      }
+      img {
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+      }
+      body {
+        --bg-color: green;
+      }
+      .outer-box {
+        width: min(700px, calc(100% - 30px));
+        height: calc(100vh / 2);
+        background-color: gray;
+        padding: 15px;
+        overflow-x: scroll;
+        border: 1px solid var(--bg-color);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .inner-box {
+        width: calc((100% - 100px) / 5);
+        height: 100px;
+        background-color: var(--bg-color);
+        margin: 10px;
+        font-size: clamp(2rem, 3vw, 5rem);
+        filter: brightness(50%);
+        box-shadow: 10px 20px 20px rgba(0, 0, 0, 1);
+      }
+
+      .inner-box:hover {
+        filter: brightness(100%);
+      }
+
+      .inner-box span {
+        font-size: 3vw;
+      }
+
+      /* 
+        full screen font-size: 3vw 
+      */
+
+      .box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        background-color: blue;
+        box-sizing: border-box;
+        border: 5px solid red;
+        display: none;
+      }
+      button {
+        cursor: crosshair;
+      }
+      button:hover span {
+        visibility: hidden;
+      }
+
+      .btn-link {
+        background-color: red;
+        padding: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+      }
+
+      .left-box {
+        width: 200px;
+        background-color: aqua;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 200px;
+        float: left;
+      }
+      .middle-box {
+        width: calc(100% - 400px);
+        background-color: purple;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 200px;
+        float: left;
+      }
+      .right-box {
+        width: 200px;
+        background-color: rosybrown;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 200px;
+        float: left;
+      }
+
+      ul.level1 li {
+        font-size: 18px;
+      }
+
+      ul.level1 > li {
+        font-size: 25px;
+      }
+
+      ul.level1 > li:first-child ~ li {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
-    <div class="outer-box">
-      <div class="inner-box">1</div>
+    <div>
+      <img src="./images/logo_dark.svg" style="width: 200px" alt="" />
     </div>
+    <div class="outer-box">
+      <div class="inner-box">1 <span>a</span></div>
+      <div class="inner-box">2 <span>a</span></div>
+      <div class="inner-box">3 <span>a</span></div>
+      <div class="inner-box">4 <span>a</span></div>
+      <div class="inner-box">5 <span>a</span></div>
+    </div>
+
+    <button><span>Hover Me</span></button>
+
+    <div class="box"></div>
+
+    <table border="1" width="100%">
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+      </tr>
+      <tr style="visibility: collapse">
+        <td>Bipin</td>
+        <td>bipin@skilluplabs.com.au</td>
+      </tr>
+      <tr>
+        <td>Skillup Labs</td>
+        <td>info@skilluplabs.com.au</td>
+      </tr>
+    </table>
+
+    <a class="btn-link" href="#">Visit my website</a>
+
+    <div>
+      <div class="left-box"></div>
+      <div class="middle-box"></div>
+      <div class="right-box"></div>
+    </div>
+
+    <ul class="level1">
+      <li>
+        1. Sunday
+        <ul>
+          <li>a. Morning</li>
+          <li>b. Afternoon</li>
+        </ul>
+      </li>
+      <li>2. Monday</li>
+      <li>3. Tuesday</li>
+      <li>4. Wednesday</li>
+      <li>5. Thursday</li>
+    </ul>
   </body>
 </html>
